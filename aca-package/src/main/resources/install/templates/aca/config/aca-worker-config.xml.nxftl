@@ -1,7 +1,7 @@
 <component name="aca.worker.service.contribs">
   <require>org.nuxeo.ecm.core.work.config</require>
 
-  <#if "${nuxeo.redis.enabled}" == "true" && "${nuxeo.cache.type}" == "redis" && "${aca.instance.type}" == "sync">
+  <#if "${aca.instance.type}" == "sync">
   <extension point="queues" target="org.nuxeo.ecm.core.work.service">
     <queue id="*" processing="false" />
   </extension>
