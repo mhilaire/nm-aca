@@ -1,0 +1,20 @@
+<component name="aca.worker.service.contribs">
+  <require>org.nuxeo.ecm.core.work.config</require>
+
+  <#if "${nuxeo.redis.enabled}" == "true" && "${nuxeo.cache.type}" == "redis" && "${aca.instance.type}" == "sync">
+  <extension point="queues" target="org.nuxeo.ecm.core.work.service">
+    <queue id="*" processing="false" />
+  </extension>
+  <#else>
+  	<require>org.nuxeo.ecm.core.work.config</require>
+	<extension target="org.nuxeo.ecm.core.work.service" point="queues">
+	    <queue id="default">
+	      <name>Default queue</name>
+	      <maxThreads>${aca.worker.default.maxthreads}</maxThreads>
+	      <!-- clear completed work instances older than one hour -->
+	      <clearCompletedAfterSeconds>3600</clearCompletedAfterSeconds>
+	    </queue>
+	  </extension>
+  </#if>
+
+</component>

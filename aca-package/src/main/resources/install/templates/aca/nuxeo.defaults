@@ -7,3 +7,7 @@ nuxeo.template.includes=common
 # org.nuxeo.ecm.instance.description=Nuxeo ECM customized with ACA
 
 #nm.custom.config
+
+#Default nuxeo instance type
+aca.instance.type=front
+aca.worker.default.maxthreads=5
