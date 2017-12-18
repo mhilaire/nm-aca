@@ -12,7 +12,7 @@
   <extension target="org.nuxeo.ecm.core.storage.sql.RepositoryService"
     point="repository">
     <repository name="default" label="label.default.repository">
-    	  <proxies enabled="false">
+    	  <proxies enabled="false" />
       <pool minPoolSize="${nuxeo.vcs["min-pool-size"]}" maxPoolSize="${nuxeo.vcs["max-pool-size"]}"
         blockingTimeoutMillis="${nuxeo.vcs["blocking-timeout-millis"]}" 
         idleTimeoutMinutes="${nuxeo.vcs["idle-timeout-minutes"]}" 
@@ -111,7 +111,7 @@
   <extension target="org.nuxeo.ecm.core.storage.mongodb.MongoDBRepositoryService"
       point="repository">
     <repository name="default" label="label.default.repository">
-      <proxies enabled="false">
+      <proxies enabled="false" />
       <server>${nuxeo.mongodb.server}</server>
       <dbname>${nuxeo.mongodb.dbname}</dbname>
       <fulltext disabled="${nuxeo.vcs.fulltext.disabled}" searchDisabled="${nuxeo.vcs.fulltext.search.disabled}" />
