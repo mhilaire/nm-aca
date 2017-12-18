@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<component name="com.nm.aca.operation.acareprocess" version="1.0">
+
+  <extension point="operations" target="org.nuxeo.ecm.core.operation.OperationServiceComponent">
+    <operation class="com.nm.aca.ACAReprocess"/>
+  </extension>
+
+</component>

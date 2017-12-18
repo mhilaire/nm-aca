@@ -1,0 +1,9 @@
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .
+Manifest-Version: 1.0
+Bundle-Vendor: com.nm.aca
+Bundle-Version: 1.0.0
+Bundle-Name: aca-core
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: com.nm.aca.aca-core;singleton=true
+Nuxeo-Component: OSGI-INF/acareprocess-operation-contrib.xml
