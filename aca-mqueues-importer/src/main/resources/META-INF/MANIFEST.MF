@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 1
+Bundle-Name: ACA MQueues Importer
+Bundle-SymbolicName: com.nm.aca.mqueues.importer;singleton:=true
+Bundle-Vendor: Nuxeo
+Nuxeo-Component: OSGI-INF/operations-contrib.xml
+

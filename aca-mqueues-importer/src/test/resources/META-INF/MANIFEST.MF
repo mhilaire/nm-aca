@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 1
+Bundle-Name: Nuxeo MQueues Contribs Test
+Bundle-SymbolicName: com.nm.aca.mqueues.importer.test;singleton:=true
+Bundle-Vendor: Nuxeo

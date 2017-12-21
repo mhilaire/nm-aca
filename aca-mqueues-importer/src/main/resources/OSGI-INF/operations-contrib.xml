@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="com.nm.aca.mqueues.importer.automation.contrib" version="1.0">
+
+  <extension target="org.nuxeo.ecm.core.operation.OperationServiceComponent" point="operations">
+    <operation class="org.nuxeo.ecm.platform.mqueues.importer.automation.ACADocumentConsumers" />
+    <operation class="org.nuxeo.ecm.platform.mqueues.importer.automation.CSVDocumentProducers" />
+  </extension>
+</component>

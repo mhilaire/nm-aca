@@ -40,13 +40,14 @@
           <artifact groupId="nuxeo-studio" />
           <!-- Include your artifacts using their groupId for instance -->
           <artifact groupId="com.nm.aca*" />
+        	<artifact groupId="org.apache.kafka*" />
+          <artifact artifactId="nuxeo-mqueues-*" groupId="org.nuxeo.lib.core" scope="!test" type="!pom" />
         </includes>
         <excludes>
           <artifact groupId="${maven.project.groupId}" artifactId="${maven.project.artifactId}" version="${maven.project.version}" type="${maven.project.packaging}"/>
           <artifact scope="test"/>
           <artifact scope="provided"/>
           <artifact type="pom"/>
-          <artifact groupId="org.nuxeo.lib*"/>
         </excludes>
       </artifact:set>
     </copy>
